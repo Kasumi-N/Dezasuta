@@ -1,0 +1,132 @@
+@charset "uft-8";
+
+/* cssリセット */
+/*利用するタグによってこちらの内容は増やす*/
+nav html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/*以下から課題*/
+
+/*work1 の①*/
+.Bbox {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.Bbox div {
+  width: 30%;
+  height: 300px;
+  margin-bottom: 20px;
+  background: blue;
+  text-align: center;
+  color: white;
+  line-height: 300px;
+}
+
+/*work1 の②*/
+.Rbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.Rbox div {
+  width: 30%;
+  height: 300px;
+  margin-bottom: 20px;
+  background: red;
+  text-align: center;
+  color: white;
+  line-height: 300px;
+}
+
+/*work1 の③*/
+nav {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 50%;
+  font-size: 16px;
+}
+
+li {
+  padding: 0px 10px;
+  border-right: 1px solid black;
+}
+
+li:last-child {
+  border: none;
+}
+
+/*work１ レスポンシブの設定*/
+@media screen and (max-width: 767px) {
+  .Bbox {
+    display: block;
+  }
+  .Bbox div {
+    width: 100%;
+  }
+
+  .Rbox {
+    display: block;
+  }
+  .Rbox div {
+    width: 100%;
+  }
+
+  /*work２ レスポンシブの設定*/
+  nav {
+    display: block;
+  }
+
+  li {
+    width: 100%;
+  }
+}
