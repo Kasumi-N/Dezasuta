@@ -2,7 +2,8 @@
 
 /* cssリセット */
 /*利用するタグによってこちらの内容は増やす*/
-nav html,
+nav,
+html,
 body,
 h1,
 h2,
@@ -80,19 +81,19 @@ img {
 }
 
 /*work1 の③*/
-nav {
-  max-width: 960px;
+.navi {
   display: flex;
   justify-content: space-between;
+  max-width: 960px;
+
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 20px;
 }
 
-ul {
+.navi-link {
   display: flex;
-  list-style: none;
-  align-items: center;
-  width: 50%;
+  flex-wrap: wrap;
+  width: 100%;
   font-size: 16px;
 }
 
@@ -122,11 +123,14 @@ li:last-child {
   }
 
   /*work２ レスポンシブの設定*/
-  nav {
+  .navi {
     display: block;
   }
 
-  li {
+  .navi-link li {
     width: 100%;
+    border-bottom: 1px solid black;
+    border-right: none;
+    padding: 10px;
   }
 }
