@@ -205,6 +205,7 @@ h2 {
 
 /* aboutus */
 .about {
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -303,7 +304,7 @@ h2 {
 
 /* event */
 .event {
-  padding: 60px 10px;
+  padding: 60px 10px 0;
 }
 
 .event h2 {
@@ -359,6 +360,7 @@ footer {
 }
 
 .contact {
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -368,17 +370,14 @@ footer {
   padding-top: 80px;
   padding-bottom: 70px;
   font-size: 20px;
+  color: black;
+  line-height: 1.95;
 }
 
 .contact_logo {
   padding-top: 80px;
   padding-right: 70px;
   width: 226px;
-}
-
-.contact_block p {
-  color: black;
-  line-height: 1.95;
 }
 
 .copyright {
