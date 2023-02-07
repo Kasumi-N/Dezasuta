@@ -29,7 +29,7 @@
 
             <div>
                 <picture>
-                    <source srcset="images/sp_main_vs@2x-100.jpg" media=" (max-width: 767px)">
+                    <source srcset="images/sp_main_vs_2@2x-100.jpg" media=" (max-width: 767px)">
                     <img src="images/slider_2.jpg" alt="店内の様子">
                 </picture>
             </div>
@@ -125,18 +125,38 @@
         </section>
 
 
-        <section id="gallery" class="gallery">
+        <!--<section id="gallery" class="gallery">
             <h2><img src="images/gallery@2x.png" alt="gallery"></h2>
             <div class="gallery_block">
                 <ul class="gallery_list">
-                    <li><img class="pc_only" src="images/pc_gallary_05-100.jpg" alt="店内の様子"></li>
-                    <li><img class="pc_only" src="images/pc_gallary_04-100.jpg" alt="コーヒーカップと豆"></li>
+
+                    <li><img src="images/pc_gallary_05-100.jpg" alt="店内の様子"></li>
+                    <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒーカップと豆"></li>
                     <li><img src="images/pc_gallary_03-100.jpg" alt="店内イメージ"></li>
-                    <li><img class="pc_only" src="images/pc_gallary_02-100.jpg" alt="Menuボード"></li>
-                    <li><img class="pc_only" src="images/pc_gallary_01-100.jpg" alt="コーヒーを注ぐ様子"></li>
+                    <li><img src="images/pc_gallary_02-100.jpg" alt="Menuボード"></li>
+                    <li><img src="images/pc_gallary_01-100.jpg" alt="コーヒーを注ぐ様子"></li>
+                    <li><img src="images/pc_gallary_05-100.jpg" alt="店内の様子"></li>
+
                 </ul>
             </div>
+        </section>-->
+
+        <section class="gallery">
+            <h2><img src="images/gallery@2x.png" alt="gallery"></h2>
+
+            <div class="gallery_block">
+                <div class="gallery_list">
+                    <div><img src="images/pc_gallary_05-100.jpg" alt="店内の様子"></div>
+                    <div><img src="images/pc_gallary_04-100.jpg" alt="コーヒーカップと豆"></div>
+                    <div><img src="images/pc_gallary_03-100.jpg" alt="店内イメージ"></div>
+                    <div><img src="images/pc_gallary_02-100.jpg" alt="Menuボード"></div>
+                    <div><img src="images/pc_gallary_01-100.jpg" alt="コーヒーを注ぐ様子"></div>
+                    <div><img src="images/pc_gallary_05-100.jpg" alt="店内の様子"></div>
+                </div>
+            </div>
         </section>
+
+
 
 
         <section id="event" class="event section">
@@ -223,6 +243,32 @@
                 arrows: false,
             });
 
+            $(".gallery_list").slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+
+                slidesToshow: 5,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 3000, //ブレークポイント
+                    settings: {
+                        slidesToShow: 5, //表示するスライドの数
+                        slidesToScroll: 1, //スクロールで切り替わるスライドの数
+                    }
+                }, {
+                    breakpoint: 376, //ブレークポイント
+                    settings: {
+                        slidesToShow: 1, //表示するスライドの数
+                        slidesToScroll: 1, //スクロールで切り替わるスライドの数
+                    }
+                }]
+
+
+
+
+
+
+            });
 
 
         });
