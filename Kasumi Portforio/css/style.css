@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: white;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ヘッダー */
+.header_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 98;
+}
+
+.pc_nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.pc_nav ul li {
+  padding-right: 64px;
+  padding-top: 39.5px;
+}
+
+/* メイン 
+main {
+  background-color: #002870;
+}
+/* 共通 */
+h2 {
+  font-size: 22px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fbcd1f;
+}
+
+.h2_ja {
+  font-size: 15px;
+  padding-top: 13px;
+  text-align: center;
+  color: #fbcd1f;
+}
+
+.view_btn {
+  width: 195px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #b2bed4;
+  border-radius: 30px;
+  color: #002870;
+  margin-top: 50px;
+}
+
+/* ここからはじまる */
+
+.first_view_backcolor {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #000033 0%,
+    #000033 15%,
+    #000842 30%,
+    #002870 100%
+  );
+}
+
+.first_view {
+  max-width: 100%;
+  box-sizing: border-box;
+  top: 238px;
+  left: 233px;
+}
+
+.first_view_concept {
+  display: flex;
+}
+
+.first_view_backcolor {
+  position: relative;
+}
+
+.first_view_logo {
+  position: absolute;
+  top: 228px;
+  right: 280px;
+}
+.first_view_text {
+  position: absolute;
+  top: 265px;
+  left: 234px;
+}
+
+.first_view_text {
+  font-size: 34px;
+  line-height: 1.94;
+  letter-spacing: 0.1em;
+}
+
+.first_view_logo {
+  width: 108px;
+  padding-left: 162px;
+}
+
+main {
+  position: relative;
+  padding-top: 200px;
+  background: linear-gradient(
+    to bottom,
+    #000033 0%,
+    #000033 10%,
+    #000842 15%,
+    #002870 30%
+  );
+}
+
+.first_view_sea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* about */
+.about {
+  padding-top: 42px;
+  text-align: center;
+}
+
+.about_block p {
+  font-size: 20px;
+  padding-top: 35px;
+  line-height: 2;
+}
+
+/* skill */
+.skill {
+  max-width: 1000px;
+  padding-top: 138px;
+  margin: 0 auto;
+}
+
+.skill_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 10px 0px 10px;
+  box-sizing: border-box;
+}
+
+.skill {
+  padding-top: 140px;
+}
+
+.skill_list img {
+  width: 300px;
+}
+
+.skill_list dt {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.skill_list dd {
+  font-size: 16px;
+  line-height: 1.56;
+  padding-top: 18px;
+}
+
+/* works */
+.works {
+  max-width: 1000px;
+  padding-top: 138px;
+  margin: 0 auto;
+}
+
+.works_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 10px 0px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+}
+
+.works_images1 {
+  width: 274px;
+  padding-right: 20px;
+}
+
+.works_images2,
+.works_images3 {
+  width: 417px;
+  margin-top: -50px;
+}
+
+/* Footer */
+footer {
+  background-color: #b2bed4;
+  margin: 0 auto;
+  color: #002870;
+}
+
+.footer_nav {
+  justify-content: center;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 73px;
+}
+
+.footer_nav {
+  display: flex;
+}
+
+.footer_nav ul {
+  display: flex;
+}
+
+.footer_nav li {
+  padding-right: 73px;
+}
+
+.footer_logo {
+  width: 66px;
+  padding-right: 93px;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 13px;
+}
