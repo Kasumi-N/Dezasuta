@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* works */
+#particles-js02 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h2 {
+  padding-top: 127px;
+}
+
+.works_menu {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px;
+}
+
+.works_menu ul {
+  display: flex;
+}
+
+.works_menu li {
+  padding-right: 19px;
+  padding-left: 19px;
+  border-right: 1px solid white;
+}
+.works_menu li:last-child {
+  border: none;
+}
+
+/* 共通 */
+.works_block {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+dt,
+dd {
+  font-size: 16px;
+  line-height: 1.56;
+  text-align: center;
+}
+
+/* チラシ */
+.chirashi_list {
+  display: flex;
+}
+
+.taitol1 {
+  border-bottom: 1px solid white;
+}
+
+.works1 {
+  width: 300px;
+}
+
+.works2 {
+  width: 277px;
+}
+
+.chirashi_list li {
+  padding-top: 25px;
+  padding-right: 60px;
+  padding-bottom: 73px;
+}
+
+.chirashi_list dl {
+  padding-top: 15px;
+}
+
+/* Web広告バナー */
+.webbanner_list {
+  display: flex;
+}
+
+.taitol2 {
+  border-bottom: 1px solid white;
+}
+
+.works3,
+.works4,
+.works5 {
+  width: 417px;
+}
+
+.webbanner_list img {
+  margin-top: -45px;
+}
+
+.webbanner_list li {
+  padding-top: 25px;
+  padding-bottom: 73px;
+}
+.webbanner_list dt {
+  margin-top: -10px;
+}
+
+/* Webサイト */
+.website_list {
+  display: flex;
+}
+
+.taitol3 {
+  border-bottom: 1px solid white;
+}
+
+.works6,
+.works7,
+.works8 {
+  width: 417px;
+}
+
+.website_list img {
+  margin-top: -45px;
+}
+
+.website_list li {
+  padding-top: 25px;
+  padding-bottom: 73px;
+}
+
+.website_list dt {
+  margin-top: -10px;
+}

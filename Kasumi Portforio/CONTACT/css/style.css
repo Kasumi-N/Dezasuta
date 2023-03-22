@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+#particles-js02 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+h2 {
+  padding-top: 127px;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact_text {
+  text-align: center;
+  line-height: 1.87;
+  padding-top: 70px;
+}
+
+.contact_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #b2bed4;
+  padding-top: 47px;
+}
+
+.required {
+  color: #fbcd1f;
+}
+
+#name,
+#company,
+#email,
+#tel,
+#msg {
+  width: 560px;
+  height: 55px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+button {
+  width: 195px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b2bed4;
+  color: #002870;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}

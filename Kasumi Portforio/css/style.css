@@ -1,107 +1,6 @@
 @charset "utf-8";
 
-/* cssリセット */
-
-html,
-body,
-h1,
-h2,
-h3,
-p,
-dl,
-dt,
-dd,
-ul,
-li {
-  margin: 0;
-  margin: 0;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  color: white;
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
-  font-feature-settings: "palt";
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: 0.3s;
-}
-
-a:hover {
-  opacity: 0.5;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-  border: none;
-}
-
-/* ヘッダー */
-.header_wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 98;
-}
-
-.pc_nav ul {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 15px;
-}
-
-.pc_nav ul li {
-  padding-right: 64px;
-  padding-top: 39.5px;
-}
-
-/* メイン 
-main {
-  background-color: #002870;
-}
-/* 共通 */
-h2 {
-  font-size: 22px;
-  text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  color: #fbcd1f;
-}
-
-.h2_ja {
-  font-size: 15px;
-  padding-top: 13px;
-  text-align: center;
-  color: #fbcd1f;
-}
-
-.view_btn {
-  width: 195px;
-  height: 50px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  background-color: #b2bed4;
-  border-radius: 30px;
-  color: #002870;
-  margin-top: 50px;
-}
-
-/* ここからはじまる */
-
+/* ファーストビュー */
 .first_view_backcolor {
   height: 100vh;
   background: linear-gradient(
@@ -111,6 +10,15 @@ h2 {
     #000842 30%,
     #002870 100%
   );
+  z-index: -2;
+}
+
+#particles-js01 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .first_view {
@@ -153,13 +61,7 @@ h2 {
 main {
   position: relative;
   padding-top: 200px;
-  background: linear-gradient(
-    to bottom,
-    #000033 0%,
-    #000033 10%,
-    #000842 15%,
-    #002870 30%
-  );
+  z-index: -2;
 }
 
 .first_view_sea {
@@ -167,6 +69,15 @@ main {
   top: 0;
   left: 0;
   width: 100%;
+  background: rgba(178, 190, 212, 0.5);
+}
+
+#particles-js02 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* about */
@@ -183,6 +94,7 @@ main {
 
 /* skill */
 .skill {
+  position: relative;
   max-width: 1000px;
   padding-top: 138px;
   margin: 0 auto;
@@ -215,6 +127,38 @@ main {
   padding-top: 18px;
 }
 
+.cloud_block {
+  z-index: -1;
+}
+
+.cloud1 {
+  width: 197px;
+  position: absolute;
+  bottom: 216px;
+  left: -100px;
+}
+
+.cloud2 {
+  width: 176px;
+  position: absolute;
+  left: 200px;
+  bottom: 450px;
+}
+
+.cloud3 {
+  width: 75px;
+  position: absolute;
+  bottom: 200px;
+  left: 600px;
+}
+
+.cloud4 {
+  width: 229px;
+  position: absolute;
+  bottom: 120px;
+  left: 900px;
+}
+
 /* works */
 .works {
   max-width: 1000px;
@@ -231,49 +175,29 @@ main {
   font-size: 16px;
 }
 
-.works_images1 {
-  width: 274px;
-  padding-right: 20px;
+.works_list p {
+  padding-top: 30px;
 }
 
-.works_images2,
-.works_images3 {
-  width: 417px;
-  margin-top: -50px;
+.works_list img {
+  width: 300px;
 }
 
-/* Footer */
-footer {
-  background-color: #b2bed4;
-  margin: 0 auto;
-  color: #002870;
-}
-
-.footer_nav {
-  justify-content: center;
-  align-items: center;
-  padding-top: 66px;
-  padding-bottom: 73px;
-}
-
-.footer_nav {
+.btn {
   display: flex;
+  flex-direction: column;
 }
 
-.footer_nav ul {
-  display: flex;
+.topback_btn {
+  position: fixed;
+  bottom: 150px;
+  right: 40px;
+  width: 70px;
 }
 
-.footer_nav li {
-  padding-right: 73px;
-}
-
-.footer_logo {
-  width: 66px;
-  padding-right: 93px;
-}
-
-.copyright {
-  text-align: center;
-  padding-bottom: 13px;
+.contact_btn {
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  width: 100px;
 }

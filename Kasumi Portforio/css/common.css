@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: white;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ヘッダー */
+.header_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 98;
+}
+
+.pc_nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.pc_nav ul li {
+  padding-right: 64px;
+  padding-top: 39.5px;
+}
+
+/* 共通 */
+h2 {
+  font-size: 22px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fbcd1f;
+}
+
+.h2_ja {
+  font-size: 15px;
+  padding-top: 13px;
+  text-align: center;
+  color: #fbcd1f;
+}
+
+.view_btn {
+  width: 195px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #b2bed4;
+  border-radius: 30px;
+  color: #002870;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.back_btn {
+  width: 195px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #b2bed4;
+  border-radius: 30px;
+  color: #002870;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #000033 0%,
+    #000033 10%,
+    #000842 15%,
+    #002870 30%
+  );
+  z-index: -2;
+}
+
+body {
+  background-color: #002870;
+}
+
+/* Footer */
+footer {
+  background-color: #b2bed4;
+  margin: 0 auto;
+  color: #002870;
+}
+
+.footer_nav {
+  justify-content: center;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 73px;
+  font-size: 15px;
+}
+
+.footer_nav {
+  display: flex;
+}
+
+.footer_nav ul {
+  display: flex;
+}
+
+.footer_nav li {
+  padding-right: 73px;
+}
+
+.footer_logo {
+  width: 66px;
+  padding-right: 93px;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 13px;
+}
