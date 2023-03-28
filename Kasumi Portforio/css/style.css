@@ -10,32 +10,25 @@
     #000842 30%,
     #002870 100%
   );
-  z-index: -2;
 }
-
 #particles-js01 {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
 }
-
 .first_view {
   max-width: 100%;
   box-sizing: border-box;
   top: 238px;
   left: 233px;
 }
-
 .first_view_concept {
   display: flex;
 }
-
 .first_view_backcolor {
   position: relative;
 }
-
 .first_view_logo {
   position: absolute;
   top: 228px;
@@ -46,24 +39,21 @@
   top: 265px;
   left: 234px;
 }
-
 .first_view_text {
   font-size: 34px;
   line-height: 1.94;
   letter-spacing: 0.1em;
 }
-
 .first_view_logo {
   width: 108px;
   padding-left: 162px;
 }
 
+/* main */
 main {
-  position: relative;
   padding-top: 200px;
-  z-index: -2;
+  overflow-x: hidden;
 }
-
 .first_view_sea {
   position: absolute;
   top: 0;
@@ -71,21 +61,17 @@ main {
   width: 100%;
   background: rgba(178, 190, 212, 0.5);
 }
-
 #particles-js02 {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
 }
-
 /* about */
 .about {
   padding-top: 42px;
   text-align: center;
 }
-
 .about_block p {
   font-size: 20px;
   padding-top: 35px;
@@ -94,64 +80,53 @@ main {
 
 /* skill */
 .skill {
-  position: relative;
   max-width: 1000px;
   padding-top: 138px;
   margin: 0 auto;
 }
-
 .skill_list {
   display: flex;
   justify-content: space-between;
   padding: 65px 10px 0px 10px;
   box-sizing: border-box;
 }
-
 .skill {
   padding-top: 140px;
 }
-
 .skill_list img {
   width: 300px;
 }
-
 .skill_list dt {
   font-size: 20px;
   text-align: center;
   padding-top: 30px;
 }
-
 .skill_list dd {
   font-size: 16px;
   line-height: 1.56;
   padding-top: 18px;
 }
-
 .cloud_block {
   z-index: -1;
 }
-
 .cloud1 {
   width: 197px;
   position: absolute;
   bottom: 216px;
   left: -100px;
 }
-
 .cloud2 {
   width: 176px;
   position: absolute;
   left: 200px;
   bottom: 450px;
 }
-
 .cloud3 {
   width: 75px;
   position: absolute;
   bottom: 200px;
   left: 600px;
 }
-
 .cloud4 {
   width: 229px;
   position: absolute;
@@ -165,7 +140,6 @@ main {
   padding-top: 138px;
   margin: 0 auto;
 }
-
 .works_list {
   display: flex;
   justify-content: space-between;
@@ -174,30 +148,115 @@ main {
   text-align: center;
   font-size: 16px;
 }
-
 .works_list p {
   padding-top: 30px;
 }
-
 .works_list img {
   width: 300px;
 }
 
-.btn {
-  display: flex;
-  flex-direction: column;
+/* ここからレスポンシブ */
+.sp_only {
+  display: none;
 }
 
-.topback_btn {
-  position: fixed;
-  bottom: 150px;
-  right: 40px;
-  width: 70px;
+@media screen and (max-width: 1100px) {
+  .first_view_text {
+    font-size: 3vmax;
+  }
 }
 
-.contact_btn {
-  position: fixed;
-  bottom: 60px;
-  right: 40px;
-  width: 100px;
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+  }
+  .pc_only {
+    display: none;
+  }
+  /* first viewレスポンシブ*/
+  .first_view {
+    height: 100vh;
+    width: 100%;
+  }
+  .first_view_text {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+  .first_view_logo {
+    width: 32px;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  /* aboutレスポンシブ*/
+  .about {
+    padding: 0 18px;
+  }
+  .about_block p {
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  /* skillレスポンシブ*/
+  .skill {
+    padding-top: 60px;
+  }
+  .skill_list {
+    display: block;
+    padding: 30px 30px 0;
+  }
+  .skill_list img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  .skill_list dt {
+    font-size: 18px;
+    padding-top: 24px;
+    margin: 0 auto;
+  }
+  .skill_list dd {
+    width: 315px;
+    font-size: 14px;
+    line-height: 1.78;
+    padding-bottom: 77px;
+  }
+
+  /* worksレスポンシブ*/
+  .works {
+    padding-top: 60px;
+  }
+  .works_list {
+    display: block;
+    padding: 30px 30px 0;
+  }
+  .works_list p {
+    padding-top: 10px;
+  }
+  .cloud1 {
+    width: 197px;
+    position: absolute;
+    bottom: 900px;
+    left: -50px;
+  }
+  .cloud2 {
+    width: 176px;
+    position: absolute;
+    bottom: 1100px;
+    left: 200px;
+  }
+  .cloud3 {
+    width: 75px;
+    position: absolute;
+    bottom: 700px;
+    left: 0px;
+  }
+  .cloud4 {
+    width: 229px;
+    position: absolute;
+    bottom: 500px;
+    left: 250px;
+  }
 }

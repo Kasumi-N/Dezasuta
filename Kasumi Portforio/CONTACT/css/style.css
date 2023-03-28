@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-#particles-js02 {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 h2 {
   padding-top: 127px;
 }
@@ -64,4 +57,31 @@ button {
   margin-top: 50px;
   margin-bottom: 50px;
   cursor: pointer;
+  border: 0;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    padding-top: 43px;
+  }
+  .contact_text {
+    padding-top: 28px;
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  .contact_list {
+    padding-top: 27px;
+  }
+  label {
+    padding-bottom: 5px;
+  }
+
+  #name,
+  #company,
+  #email,
+  #tel,
+  #msg {
+    width: 316px;
+    height: 33px;
+  }
 }
